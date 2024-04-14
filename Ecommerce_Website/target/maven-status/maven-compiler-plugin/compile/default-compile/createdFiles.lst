@@ -1,0 +1,6 @@
+com\mycompany\ecommerce2\resources\JakartaEE10Resource.class
+user.class
+com\mycompany\ecommerce2\entities\Product.class
+com\mycompany\ecommerce2\entities\Category.class
+com\mycompany\ecommerce2\JakartaRestConfiguration.class
+FactoryProvider.class
