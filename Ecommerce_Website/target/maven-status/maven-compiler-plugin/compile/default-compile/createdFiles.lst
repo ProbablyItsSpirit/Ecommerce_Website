@@ -1,6 +1,6 @@
-com\mycompany\ecommerce2\resources\JakartaEE10Resource.class
-user.class
-com\mycompany\ecommerce2\entities\Product.class
-com\mycompany\ecommerce2\entities\Category.class
-com\mycompany\ecommerce2\JakartaRestConfiguration.class
-FactoryProvider.class
+com\mycompany\ecommerce4\entities\user.class
+com\mycompany\ecommerce4\entities\product.class
+com\mycompany\ecommerce4\helper\FactoryProvider.class
+com\mycompany\ecommerce4\entities\category.class
+com\mycompany\ecommerce4\JakartaRestConfiguration.class
+com\mycompany\ecommerce4\resources\JakartaEE10Resource.class

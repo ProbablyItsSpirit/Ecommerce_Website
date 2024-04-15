@@ -6,21 +6,24 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">
-            com.mysql.jdbc.Driver
+            com.mysql.cj.jdbc.Driver
         </property>
 
-        <property name="connection.url">jdbc:mysql://localhost:3306/Ecommerce
+        <property name="connection.url">jdbc:mysql://localhost:3306/Ecommerce4
         </property>
 
         <property name ="connection.username">root</property>
 
-        <property name ="connection.password">root</property>
+        <property name ="connection.password">Ashr3y@2230</property>
         <property name ="dialect"> org.hibernate.dialect.MySQL8Dialect</property>
         <property name ="hbm2ddl.auto">update</property>
         <property name ="show_sql">true</property>
-        <mapping class= "com.mycompany.ecommerce.entitites.user"/>
-        <mapping class= "com.mycompany.ecommerce.entitites.Category"/>
-        <mapping class= "com.mycompany.ecommerce.entitites.Product"/>
+        
+        <mapping class= "com.mycompany.ecommerce4.entitites.user"/>
+        <mapping class= "com.mycompany.ecommerce4.entitites.category"/>
+        <mapping class= "com.mycompany.ecommerce4.entitites.product"/>
+      
+
       
     </session-factory>
 </hibernate-configuration>
