@@ -1,4 +1,5 @@
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -10,56 +11,42 @@
     <body>
         <%@include file="components/navbar.jsp" %>
         
-        <div class ="container">
-            
-        <div class="row">
-            <div class="col-md-4 offset md-4">
-                
-                <form>
-                  <div class="form-group">
-                        <label for="name">User Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name here">
-                        
-                     </div>
-                    
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        
-                     </div>
-                    
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    
-                     <div class="form-group">
-                        <label for="phone">Contact no.</label>
-                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter contact number">
-                        
-                     </div>
-                    
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <textarea class="form-control"  placeholder="Enter your address"></textarea>
-                         
-                     </div>
-                    
-                     <div class="container text-center"> 
-                        <button class="btn btn-outline-success">Register</button>
-                    </div>
-                    
-                 
-                    
-                    
-                     
-                </form>
-                
-           
-        </div>
-        </div>
-         
-                    
-        
-    </body>
-</html>
+          <div class="row mt-5">
+       <div class="col-md-4 offset-md-4"> 
+    
+         <div class="card">
+         <%@include file="components/message.jsp" %>
+            <div class="card-body px-5">
+               <h3 class="text-center my-3">Sign Up here</h3>
+               <form action="/RegisterServlet" method="post">
+                <div class="form-group">
+                  <label for="user">User Name</label>
+                  <input type="text" name="user_name" class="form-control" id="user"  placeholder="Enter name here">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email"name="user_email" class="form-control" id="email" placeholder="Enter email here">
+                </div>
+                <div class="form-group">
+                  <label for="password">User Password</label>
+                  <input type="password" name="user_password" class="form-control" id="password" placeholder="Enter password here">
+                </div> 
+                <div class="form-group">
+                  <label for="phone">User phone</label>
+                  <input type="number" name="user_phone" class="form-control" id="phone" placeholder="Enter Phone number here">
+                </div>
+                <div class="form-group">
+                  <label for="address">User address</label>
+                  <textarea name="user_address" class="form-control" style="height:200px;"placeholder="Enter your Address"></textarea>
+                </div>
+                <div class="container text-center">
+                      <button type="submit" class="btn btn-outline-success">Submit</button>
+                      <button type="reset" value="clear" class="btn btn-outline-warning">Reset</button>    
+                </div> 
+              </form>
+                          </div>
+                       </div>
+                     </div>    
+                  </div>
+              </body>
+              </html>

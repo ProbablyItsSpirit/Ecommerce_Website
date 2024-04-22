@@ -1,6 +1,6 @@
 <%-- 
-    Document   : about
-    Created on : 17-Apr-2024, 6:59:54 pm
+    Document   : admin
+    Created on : 16-Apr-2024, 9:16:34 pm
     Author     : Shreya
 --%>
 
@@ -10,9 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-         <%@include file ="components/common_css_js.jsp" %>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>This is admin login</h1>
     </body>
 </html>

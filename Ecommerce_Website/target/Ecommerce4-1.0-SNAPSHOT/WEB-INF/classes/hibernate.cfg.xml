@@ -9,7 +9,7 @@
             com.mysql.cj.jdbc.Driver
         </property>
 
-        <property name="connection.url">jdbc:mysql://localhost:3306/Ecommerce4
+        <property name="connection.url">jdbc:mysql://localhost:3306/ecommerce4
         </property>
 
         <property name ="connection.username">root</property>
@@ -19,9 +19,9 @@
         <property name ="hbm2ddl.auto">update</property>
         <property name ="show_sql">true</property>
         
-        <mapping class= "com.mycompany.ecommerce4.entitites.user"/>
-        <mapping class= "com.mycompany.ecommerce4.entitites.category"/>
-        <mapping class= "com.mycompany.ecommerce4.entitites.product"/>
+        <mapping class= "com.mycompany.ecommerce4.entitities.user"/>
+        <mapping class= "com.mycompany.ecommerce4.entitities.category"/>
+        <mapping class= "com.mycompany.ecommerce4.entitities.product"/>
       
 
       

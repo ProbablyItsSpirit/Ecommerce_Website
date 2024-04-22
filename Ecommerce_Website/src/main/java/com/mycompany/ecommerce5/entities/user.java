@@ -1,12 +1,10 @@
-package com.mycompany.ecommerce4.entities;
-
-
+package com.mycompany.ecommerce5.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.*;
 
 @Entity
-public class user{
+public class user {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,18 +13,13 @@ public class user{
     private String userEmail;
     private String userPassword;
     private String userPhone;
-    @Column(length = 1500, name = "User Address")
+    @Column(length = 1500, name = "UserAddress")
     private String userAddress;
 
-    public user(int userId, String userName, String userEmail, String userPassword, String userPhone, String userAddress) {
-        this.userId = userId;
-        this.userName = userName;
-        this.userEmail = userEmail;
-        this.userPassword = userPassword;
-        this.userPhone = userPhone;
-        this.userAddress = userAddress;
+    public user() {
     }
 
+    // Constructor without userId
     public user(String userName, String userEmail, String userPassword, String userPhone, String userAddress) {
         this.userName = userName;
         this.userEmail = userEmail;
@@ -35,10 +28,7 @@ public class user{
         this.userAddress = userAddress;
     }
 
-    public user() {
-    }
-    
-
+    // Getters and setters
     public int getUserId() {
         return userId;
     }
@@ -91,11 +81,5 @@ public class user{
     public String toString() {
         return "user{" + "userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userPassword=" + userPassword + ", userPhone=" + userPhone + ", userAddress=" + userAddress + '}';
     }
-
-    public Object getUserType() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-   
 
 }
