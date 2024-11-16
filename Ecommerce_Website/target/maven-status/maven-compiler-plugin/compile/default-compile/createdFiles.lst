@@ -1,8 +1,0 @@
-com\mycompany\ecommerce5\entities\user.class
-com\mycompany\ecommerce5\entities\product.class
-com\mycompany\ecommerce5\servelets\LoginServelet.class
-com\mycompany\ecommerce5\resources\JakartaEE10Resource.class
-com\mycompany\ecommerce5\JakartaRestConfiguration.class
-com\mycompany\ecommerce5\helper\FactoryProvider.class
-com\mycompany\ecommerce5\servelets\RegisterServlet.class
-com\mycompany\ecommerce5\entities\category.class
